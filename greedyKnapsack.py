@@ -51,7 +51,7 @@ list.sort(key=itemgetter('weight'),reverse=False)
 for j in list:
     profit_weight = profit_weight + j['profit']
     min_weight = min_weight + j['weight']
-    kapasitas_min_weight = kapasitas_min_weight - row['weight']
+    kapasitas_min_weight = kapasitas_min_weight - j['weight']
     if kapasitas_min_weight <= 1 or kapasitas_min_weight == 0:
         break
 
